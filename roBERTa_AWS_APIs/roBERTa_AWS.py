@@ -32,7 +32,7 @@ def app():
         api = {"features": [fb]}
         # print(type(api))
         # print(api)
-        response = requests.post(st.secrets["aws_api"],
+        response = requests.post(st.secret["aws_api"],
                                  data=json.dumps(api))
         prediction = json.loads(json.loads(response.content)[0])
         label = prediction["predicted_label"]
