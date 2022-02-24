@@ -24,7 +24,7 @@ def app():
     st.write('**Some examples:**')
     st.write('I love this product!, my dog always plays with it.')
     st.write('OK, but not great, it can be replaced my old tool.')
-    st.write('This is not the right product. I want to refund!!!.')
+    st.write('This is not the right product. I want to refund!!.')
 
 
 
@@ -32,7 +32,7 @@ def app():
         api = {"features": [fb]}
         # print(type(api))
         # print(api)
-        response = requests.post(st.secret["aws_api"],
+        response = requests.post(st.secret["AWS_API"],
                                  data=json.dumps(api))
         prediction = json.loads(json.loads(response.content)[0])
         label = prediction["predicted_label"]
