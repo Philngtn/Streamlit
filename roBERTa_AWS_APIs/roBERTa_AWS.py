@@ -41,11 +41,11 @@ def app():
 
 
         if label == 1:
-            st.write('The customer review seems to be happy with the confidence ' + confidence +'%.')
+            st.write('The customer review seems to be **happy** with the confidence ' + confidence +'%.')
         elif label == 0:
-            st.write('The customer review seems to be neutral with the confidence '+ confidence+'%.')
+            st.write('The customer review seems to be **neutral** with the confidence '+ confidence+'%.')
         elif label == -1:
-            st.write('The customer review seems to be unhappy with the confidence '+ confidence+'%.')
+            st.write('The customer review seems to be **unhappy** with the confidence '+ confidence+'%.')
         else:
             st.write('Server DOWNNNNN !!! Try again later ^^, or my wallet is empty :(, contact me if you want to see it run.')
     else:
